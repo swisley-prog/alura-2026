@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap&#39;);
 
 :root {
     --cor-de-fundo: #1E1E1E;
@@ -37,7 +37,7 @@ body {
 }
 
 .botao {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "Crakra Petch", sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -60,7 +60,17 @@ body {
     display: block;
 }
 
-@media screen and(min-width:768px){
-    .botoes{
+
+@media screen and (min-width: 768px) {
+    .botoes {
         display: flex;
     }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
